@@ -1,0 +1,17 @@
+criar o venv: py -m venv venv
+ativar o venv: ./venv/Scripts/activate
+instalar o django: pip install django dijangorestframework dijango-cors-headers
+para ver si esta tudo instalada: pip freeze
+para iniciar o projeto: django-admin startproject name
+para criar o app com o arquivo manage:py manage.py startapp name
+adicionar o app ao settings: INSTALLED_APPS = ['name'] e o cross-origin-resource-sharing (CORS): INSTALLED_APPS = ['corsheaders']
+para criar banco de dados: python manage.py makemigrations
+para migrar o banco de dados: python manage.py migrate
+criar superuser: python manage.py createsuperuser
+para rodar o servidor: python manage.py runserver
+link da api: http://127.0.0.1:8000
+    -/api/data/?user=fedner_nick
+    -/api/
+    POST: /api/data/
+    GET: /api/data/?user=fedner_nick
+    DELETE: /api/data/?user=fedner_nick
